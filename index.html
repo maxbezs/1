@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Select Box</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".default_option").click(function(){
+			  $(this).parent().toggleClass("active");
+			})
+
+			$(".select_ul li").click(function(){
+			  var currentele = $(this).html();
+			  $(".default_option li").html(currentele);
+			  $(this).parents(".select_wrap").removeClass("active");
+			})
+		});
+        $(document).ready(function(){
+			$(".default_option1").click(function(){
+			  $(this).parent().toggleClass("active");
+			})
+
+			$(".select_ul1 li").click(function(){
+			  var currentele = $(this).html();
+			  $(".default_option1 li").html(currentele);
+			  $(this).parents(".select_wrap1").removeClass("active");
+			})
+		});
+        $(document).ready(function(){
+			$(".default_option2").click(function(){
+			  $(this).parent().toggleClass("active");
+			})
+
+			$(".select_ul2 li").click(function(){
+			  var currentele = $(this).html();
+			  $(".default_option2 li").html(currentele);
+			  $(this).parents(".select_wrap2").removeClass("active");
+			})
+		});
+        $(document).ready(function(){
+			$(".default_option3").click(function(){
+			  $(this).parent().toggleClass("active");
+			})
+
+			$(".select_ul3 li").click(function(){
+			  var currentele = $(this).html();
+			  $(".default_option3 li").html(currentele);
+			  $(this).parents(".select_wrap3").removeClass("active");
+			})
+		});
+	</script>
+</head>
+<body>
+    <div class="logoimg">
+        <img src="asset/logo.png" style="width: 60px;">
+    </div>
+    <div style="width: 50%; height: auto; float:left;">
+        <div class="rowwrap">
+            <div class="wrapper">
+                <div class="select_wrap">
+                    <ul class="default_option">
+                        <li>
+                            <div class="option pizza">
+                              <div class="icon"></div>
+                              <p>Home</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul">
+                        <li>
+                            <div class="option pizza">
+                              <div class="icon"></div>
+                              <p>Career</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option burger">
+                              <div class="icon"></div>
+                              <p>Gallery</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="option ice">
+                              <div class="icon"></div>
+                              <p>About</p>
+                            </div>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rowwrap">
+            <div class="wrapper1">
+                <div class="select_wrap1">
+                    <ul class="default_option1">
+                        <li>
+                            <div class="option pizza1">
+                              <div class="icon1"></div>
+                              <p>Pages</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul1">
+                        <li>
+                            <div class="option pizza1">
+                              <div class="icon1"></div>
+                              <p>Main</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option burger1">
+                              <div class="icon1"></div>
+                              <p>Info</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="option ice1">
+                              <div class="icon1"></div>
+                              <p>Contacts</p>
+                            </div>  
+                        </li>
+                        <li>
+                          <div class="option fries1">
+                              <div class="icon1"></div>
+                              <p>More</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rowwrap">
+            <div class="wrapper2">
+                <div class="select_wrap2">
+                    <ul class="default_option2">
+                        <li>
+                            <div class="option pizza2">
+                              <div class="icon2"></div>
+                              <p>Blog</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul2">
+                        <li>
+                            <div class="option pizza2">
+                              <div class="icon"></div>
+                              <p>Pizzas</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option burger2">
+                              <div class="icon2"></div>
+                              <p>Burget</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="option ice2">
+                              <div class="icon2"></div>
+                              <p>Ice Cream</p>
+                            </div>  
+                        </li>
+                        <li>
+                          <div class="option fries2">
+                              <div class="icon2"></div>
+                              <p>Fried Potatoes</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div  class="rowwrap">
+            <div class="wrapper3">
+                <div class="select_wrap3">
+                    <ul class="default_option3">
+                        <li>
+                            <div class="option pizza3">
+                              <div class="icon3"></div>
+                              <p>Portfolio</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="select_ul3">
+                        <li>
+                            <div class="option pizza3">
+                              <div class="icon3"></div>
+                              <p>Pizzas</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option burger3">
+                              <div class="icon3"></div>
+                              <p>Burget</p>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="option ice3">
+                              <div class="icon3"></div>
+                              <p>Ice Cream</p>
+                            </div>  
+                        </li>
+                        <li>
+                          <div class="option fries3">
+                              <div class="icon3"></div>
+                              <p>Fried Potatoes</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div  class="rowwrap">
+            <button class="btn">Get Started</button>
+        </div>
+    </div>
+    <div class="maindiv">
+        <div class="maindiv1">
+            <label style="font-size: 64px;">Quick payments with Movel!</label>
+            <div style="margin: 30px 0px 30px 0px">
+                <label style="font-size: 24px;">Try the new fast payment system with no Commission and no time to authorize payments, it is designed to help you conquer new horizons!</label>
+            </div>
+            <div class="mrgbtngroup">
+                <div class="btngroup">
+                    <button class="btn2">Get Started</button>
+                </div>
+                <div class="btngroup">
+                    <button class="btn22">View more</button>
+                </div>
+            </div>
+            <button class="circlebtn"><img src="asset/aplogo.png" style="width: 55px; height: 55px;"></button>
+            <button class="circlebtn2"><img src="asset/goologo.png" style="width: 50px; height: 50px; margin-top: 5px; margin-left: 2px;"></button>
+            <div class="payser">
+                <label style="font-size: 18px;">Compatible with Google Pay and Apple Pay</label>
+            </div>
+        </div>
+        <div class="maindiv2">
+            <div class="profdiv">
+                <div class="backdiv">
+                    <div class="toptr">
+                        <div class="alltr">
+                            <label style="font-size: 20px;">All Transaction</label>
+                        </div>
+                        <div  style="display: inline-block;">
+                            <button class="btnplus"><img src="asset/plus.png" style="width: 100%; height: 100%;"></button>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height: 80%; box-sizing: border-box; display: table;">
+                        <div class="rowprice">
+                            <img src="asset/uber.png"class="servico"/>
+                            <div class="pricecard1">
+                                <div class="textalignleft">
+                                    <label>Uber</label>
+                                </div>
+                                <div class="textalignleft">
+                                    <label>Taxi</label>
+                                </div>
+                            </div>
+                            <div class="pricecard">
+                                <div class="textalignright">
+                                    <label style="color: red;">$273</label>
+                                </div>
+                                <div class="textalignright">
+                                    <label>PayPal</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowprice">
+                            <img src="asset/kfc.png" class="servico"/>
+                            <div class="pricecard1">
+                                <div class="textalignleft">
+                                    <label>KFC</label>
+                                </div>
+                                <div class="textalignleft">
+                                    <label>Food</label>
+                                </div>
+                            </div>
+                            <div class="pricecard">
+                                <div class="textalignright">
+                                    <label style="color: red;">$58</label>
+                                </div>
+                                <div class="textalignright">
+                                    <label>MasterCard</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowprice">
+                            <img src="asset/prof1.jpg" class="servico"/>
+                            <div class="pricecard1">
+                                <div class="textalignleft">
+                                    <label>Sergei F.</label>
+                                </div>
+                                <div class="textalignleft">
+                                    <label>1234567</label>
+                                </div>
+                            </div>
+                            <div class="pricecard">
+                                <div class="textalignright">
+                                    <label style="color: green;">$2000</label>
+                                </div>
+                                <div class="textalignright">
+                                    <label>Visa</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
